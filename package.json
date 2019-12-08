@@ -1,0 +1,14 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Graciasc <gracias.claude@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.1"
+  },
+  "scripts": {
+    "start": "nodemon server/"
+  }
+}
