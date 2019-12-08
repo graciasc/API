@@ -6,6 +6,8 @@ Simple Restful API
 2. `yarn start` 
 
 
-### To see data
+### To see mock data
 1. http://localhost:8000/data
+
+
 
