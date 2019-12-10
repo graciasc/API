@@ -10,7 +10,18 @@ app.get('/', (req, res) => {
 
 // can call this data when local host is running using fetch
 app.get('/data', (req, res) => {
-    res.send(data)
+    res.json(data)
+})
+app.get('/data/:id', (req, res) => {
+    // convert id to a number from a string
+    const id = Number(req.params.id);
+    //find account.id if it equals id, also if you want to get a specific user
+    const getUser = data.find(user => user.id === id);
+    if (!getUser) {
+        res.status(500).send('User not found.')
+      } else {
+        res.json(getUser);
+      }
 })
 
 app.listen(port)
